@@ -1,0 +1,28 @@
+{"frames": {
+
+"tap-tick.png":
+{
+	"frame": {"x":1,"y":1,"w":59,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":59},
+	"sourceSize": {"w":59,"h":59}
+},
+"tap.png":
+{
+	"frame": {"x":62,"y":1,"w":41,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":18,"w":41,"h":41},
+	"sourceSize": {"w":59,"h":59}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tap-tick.png",
+	"format": "RGBA8888",
+	"size": {"w":104,"h":61},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0eca5e8c246e97f5f5c66761eb9b85b5:b2d9373aa43735d7a854d4cb7d1923a9:25d1af7a060a4e8b49bef713177f38c5$"
+}
+}

@@ -1,0 +1,36 @@
+{"frames": {
+
+"planeRed1.png":
+{
+	"frame": {"x":1,"y":1,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
+	"sourceSize": {"w":50,"h":50}
+},
+"planeRed2.png":
+{
+	"frame": {"x":53,"y":1,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
+	"sourceSize": {"w":50,"h":50}
+},
+"planeRed3.png":
+{
+	"frame": {"x":105,"y":1,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
+	"sourceSize": {"w":50,"h":50}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "plane-red.png",
+	"format": "RGBA8888",
+	"size": {"w":156,"h":52},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f096339d07bb9d2519c5eba152b178ec:f2edbdcee6e00a7031c31c5d80807842:3774410714432f7e4902e3852ac3386b$"
+}
+}
