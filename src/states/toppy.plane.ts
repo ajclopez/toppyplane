@@ -120,11 +120,12 @@ export class ToppyPlane extends Phaser.State {
             parseInt(localStorage.getItem('highScore')) < this.scoreCoin ?
             this.scoreCoin.toString() : localStorage.getItem('highScore'));
 
+        const tempScore = this.scoreCoin;
         this.scoreCoin = 0;
         this.scoreText.setText(this.scoreCoin.toString());
         this.highScoreText.setText('High score: ' + localStorage.getItem('highScore'));
 
-        this.state.start('GetReady', false, false, this.planeNumber);
+        this.state.start('GameOver', false, false, this.planeNumber, tempScore);
     }
 
     hitPipe() {

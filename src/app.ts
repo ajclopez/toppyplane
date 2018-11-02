@@ -9,6 +9,7 @@ import { Preloader } from './states/preloader';
 import { MainMenu } from './states/main.menu';
 import { GetReady } from './states/get.ready';
 import { ToppyPlane } from './states/toppy.plane';
+import { GameOver } from './states/game.over';
 class ToppyPlaneGame extends Phaser.Game {
 
     constructor() {
@@ -19,6 +20,7 @@ class ToppyPlaneGame extends Phaser.Game {
         this.state.add('MainMenu', MainMenu, false);
         this.state.add('GetReady', GetReady, false);
         this.state.add('ToppyPlane', ToppyPlane, false);
+        this.state.add('GameOver', GameOver, false);
 
         this.state.start('Boot');
     }

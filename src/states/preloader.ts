@@ -35,6 +35,10 @@ export class Preloader extends Phaser.State {
         this.load.atlasJSONHash('plane-red', 'assets/img/plane-red.png', 'assets/img/plane-red.json');
         this.load.atlasJSONHash('plane-yellow', 'assets/img/plane-yellow.png', 'assets/img/plane-yellow.json');
 
+        this.load.image('background-gameover', 'assets/img/background-gameover.png');
+        this.load.image('game-over-title', 'assets/img/game-over.png');
+        this.load.image('button-again', 'assets/img/button-again.png');
+
     }
 
     create() {
