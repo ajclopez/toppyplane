@@ -1,5 +1,5 @@
 # toppyplane
-Toppy Plane is a game based on the famous game Flappy Bird, using Phaser v2.11.1 (Phaser + TypeScript + Webpack).
+Toppy Plane is a game based on the famous game Flappy Bird, using Phaser v3 (Phaser + TypeScript + Webpack).
 
 # Deployment to local
 
@@ -21,7 +21,7 @@ Navigate to the cloned repo’s directory.
 
 Run:
 
-```npm install``` 
+```npm install```
 
 ## 4. Run the development server:
 

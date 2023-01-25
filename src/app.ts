@@ -1,31 +1,46 @@
-import 'pixi';
-import 'p2';
-import Phaser from 'phaser-ce';
+import 'Phaser';
 
 import { Config } from './config';
 
-import { Boot } from './states/boot';
-import { Preloader } from './states/preloader';
-import { MainMenu } from './states/main.menu';
-import { GetReady } from './states/get.ready';
-import { ToppyPlane } from './states/toppy.plane';
-import { GameOver } from './states/game.over';
+import { Boot } from './stages/boot';
+import { Preloader } from './stages/preloader';
+import { MainMenu } from './stages/main.menu';
+import { GetReady } from './stages/get.ready';
+import { ToppyPlane } from './stages/toppy.plane';
+import { GameOver } from './stages/game.over';
+
 class ToppyPlaneGame extends Phaser.Game {
 
     constructor() {
-        super(Config.gameWidth, Config.gameHeight, Phaser.AUTO, 'content');
-
-        this.state.add('Boot', Boot, false);
-        this.state.add('Preloader', Preloader, false);
-        this.state.add('MainMenu', MainMenu, false);
-        this.state.add('GetReady', GetReady, false);
-        this.state.add('ToppyPlane', ToppyPlane, false);
-        this.state.add('GameOver', GameOver, false);
-
-        this.state.start('Boot');
+        super({
+            width: Config.gameWidth,
+            height: Config.gameHeight,
+            type: Phaser.AUTO,
+            scene: [Boot, Preloader, MainMenu, GetReady, ToppyPlane, GameOver],
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: {
+                        y: 0
+                    },
+                    debug: false
+                }
+            },
+            scale: {
+                mode: Phaser.Scale.FIT,
+                autoCenter: Phaser.Scale.CENTER_BOTH,
+                parent: 'game',
+                width: Config.gameWidth,
+                height: Config.gameHeight
+            },
+            input: {
+                keyboard: true
+            }
+        });
     }
 }
 
 window.onload = () => {
     new ToppyPlaneGame();
+    window.focus();
 };

@@ -1,36 +1,30 @@
 {
   "name": "toppy-plane",
-  "version": "1.0.0",
-  "description": "Project Toppy Plane using Phaser v2.11.1 in VS Code (Phaser + TypeScript + Webpack).",
+  "version": "1.1.0",
+  "description": "Project Toppy Plane using Phaser (Phaser + TypeScript + Webpack).",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.config.js -d --inline --hot --progress --no-info --port 5500",
-    "build": "rimraf ./dist && webpack --config webpack.prod.config.js -p --progress",
+    "build-game": "webpack",
+    "server": "node server",
+    "game-dev": "webpack --mode development --watch",
+    "server-dev": "nodemon server",
+    "dev": "concurrently 'npm run game-dev' 'npm run server-dev'",
     "lint": "tslint src/**/*.ts",
     "lint:fix": "npm run lint -- --fix"
   },
-  "engines": {
-    "node": ">= 7.0.0"
-  },
   "author": "Antonio López <ajclopez9@gmail.com> (https://www.linkedin.com/in/ajclopez)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "copy-webpack-plugin": "^3.0.1",
-    "expose-loader": "^0.7.1",
-    "html-webpack-plugin": "^2.29.0",
-    "rimraf": "^2.5.4",
-    "ts-loader": "^0.8.2",
-    "tslint": "^5.8.0",
-    "tslint-loader": "^3.5.3",
-    "tslint-webpack-plugin": "^1.0.0",
-    "typescript": "^3.1.3",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^3.1.14",
-    "webpack-obfuscator": "^0.13.0",
-    "webpack-uglify-js-plugin": "^1.1.9"
+    "expose-loader": "4.0.0",
+    "live-server": "^1.2.2",
+    "nodemon": "^2.0.20",
+    "ts-loader": "9.3.1",
+    "typescript": "4.8.0-dev.20220730",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.9.3"
   },
   "dependencies": {
-    "@types/howler": "^2.0.5",
-    "howler": "^2.0.7",
-    "phaser-ce": "^2.9.4"
+    "howler": "^2.2.3",
+    "phaser": "3.60.0-beta.9"
   }
 }
