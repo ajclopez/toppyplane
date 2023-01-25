@@ -128,10 +128,10 @@ export class ToppyPlane extends Phaser.Scene {
 
         for (let i = 0; i < 13; i++) {
             if ( i !== hole && i !== hole + 1 && i !== hole + 2 && i !== hole + 3 )
-                this.addOnePipe(500, i * 60 + 25, 0);
+                this.addOnePipe(800, i * 60 + 25, 0);
         }
 
-        this.addOnePipe(500, this.randomIntFromInterval(hole + 1, hole + 2) * 60 + 25, 1);
+        this.addOnePipe(800, this.randomIntFromInterval(hole + 1, hole + 2) * 60 + 25, 1);
     }
 
     addOnePipe(x: number, y: number, type: number) {
