@@ -15,17 +15,16 @@
 	"license": "MIT",
 	"devDependencies": {
 		"expose-loader": "5.0.0",
-		"live-server": "^1.1.0",
-		"nodemon": "^3.1.0",
+		"nodemon": "^3.1.4",
 		"ts-loader": "9.5.1",
 		"typescript": "5.5.2",
-		"webpack": "^5.91.0",
+		"webpack": "^5.92.1",
 		"webpack-cli": "5.1.4",
 		"webpack-dev-server": "5.0.4"
 	},
 	"dependencies": {
 		"concurrently": "^8.2.2",
-		"howler": "^2.2.3",
+		"howler": "^2.2.4",
 		"phaser": "3.80.1"
 	}
 }
